@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyTableViewView" customModule="WhiteLabelApp" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Qx1-Fg-Fj8"/>
+                <outlet property="header" destination="KYX-bR-Gkt" id="CHe-UG-EB3"/>
+                <outlet property="image" destination="uyp-nC-D5k" id="eB5-gV-NQs"/>
+                <outlet property="text" destination="W2X-uC-yRO" id="jwE-og-vpo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uyp-nC-D5k">
+                    <rect key="frame" x="67" y="171" width="240" height="128"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYX-bR-Gkt">
+                    <rect key="frame" x="166" y="342" width="56" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W2X-uC-yRO">
+                    <rect key="frame" x="36" y="394" width="303" height="156"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="W2X-uC-yRO" secondAttribute="height" multiplier="101:52" id="08b-gS-3Dy"/>
+                        <constraint firstAttribute="width" constant="303" id="MCa-dz-Pwu"/>
+                        <constraint firstAttribute="height" constant="156" id="STH-gz-nDs"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uyp-nC-D5k" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="151" id="19C-lH-bD1"/>
+                <constraint firstItem="W2X-uC-yRO" firstAttribute="centerX" secondItem="uyp-nC-D5k" secondAttribute="centerX" id="60k-Kl-q3f"/>
+                <constraint firstItem="KYX-bR-Gkt" firstAttribute="top" secondItem="uyp-nC-D5k" secondAttribute="bottom" constant="43" id="QaK-Mo-UXj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="W2X-uC-yRO" secondAttribute="bottom" constant="117" id="RBf-4J-ekF"/>
+                <constraint firstItem="uyp-nC-D5k" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="67" id="U94-h0-D41"/>
+                <constraint firstItem="W2X-uC-yRO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VKf-U8-mOZ"/>
+                <constraint firstItem="W2X-uC-yRO" firstAttribute="top" secondItem="KYX-bR-Gkt" secondAttribute="bottom" constant="31" id="aSG-Bt-MaE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="62.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
